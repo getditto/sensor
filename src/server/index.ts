@@ -26,6 +26,12 @@ try {
   console.log(`Error starting Ditto`, err)
 }
 
+await ditto.store.collection('readings').findAll().subscribe()
+
+ditto.store.collection('readings').findAll().observeLocal((docs) => {
+  console.log(`hostnames that I see ${docs.map(d => d.id).join(', ')}`)
+})
+
 let readings: { createdOn: string, memoryPercentage: number, cpuTemperature: number}[] = []
 
 setInterval(async () => {
