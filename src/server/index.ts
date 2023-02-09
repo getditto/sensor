@@ -8,11 +8,10 @@ const app = express();
 
 // setup Ditto
 const ditto = new Ditto({
-  type: "offlinePlayground",
-  appID: '5e5a4055-ad8b-4123-923d-6e025d572def'
+  type: "onlinePlayground",
+  token: 'deb66bbb-f1b4-46df-9a6b-0b89b81b5b46',
+  appID: '31a28b44-d46e-45ad-a266-ce32f4a7abc2'
 });
-
-ditto.setOfflineOnlyLicenseToken('o2d1c2VyX2lkZURpdHRvZmV4cGlyeXgYMjAyMy0xMC0wMVQwNjo1OTo1OS45OTlaaXNpZ25hdHVyZXhYam5JYXU4WlBiV0VBZUdLR2VYZ0N2YVJxSFQ5dzdwMnFMQTRPV0UxUDEwRDd3ZkxSUE1JNXpMNDNSU01LTVNpeGNRMElnN1B2WDUzeUI5TW51VWozVVE9PQ==')
 
 // Chris Boross said: Here is the Linux + Node.js workaround Tom gave me for BT-LE on the Pi
 ditto
