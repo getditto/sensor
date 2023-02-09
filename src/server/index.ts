@@ -9,8 +9,8 @@ const app = express();
 // setup Ditto
 const ditto = new Ditto({
   type: "onlinePlayground",
-  token: 'deb66bbb-f1b4-46df-9a6b-0b89b81b5b46',
-  appID: '31a28b44-d46e-45ad-a266-ce32f4a7abc2'
+  token: '26aba87c-25bd-45c8-b46a-eb2f58a695b7',
+  appID: 'c420d141-9c4d-4a52-8770-03bf02d43330'
 });
 
 // Chris Boross said: Here is the Linux + Node.js workaround Tom gave me for BT-LE on the Pi
