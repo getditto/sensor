@@ -1,18 +1,16 @@
 import { DittoProvider } from "@dittolive/react-ditto";
-import { Ditto, Logger } from "@dittolive/ditto";
+import { Ditto, Logger, Subscription } from "@dittolive/ditto";
 import App from "./App";
 
 const createDittoInstance = () => {
-  
-  Logger.minimumLogLevel = 'Verbose'
-  
   const ditto = new Ditto(
     {
       type: "onlinePlayground",
       token: "26aba87c-25bd-45c8-b46a-eb2f58a695b7",
       appID: "c420d141-9c4d-4a52-8770-03bf02d43330",
     }
-  );  
+  );
+  ditto.startSync()
   return ditto
 };
 
