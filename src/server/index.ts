@@ -23,6 +23,7 @@ try {
   ditto.startSync()  
 } catch(err) {
   console.log(`Error starting Ditto`, err)
+  process.exit(1)
 }
 
 await ditto.store.collection('readings').findAll().subscribe()
